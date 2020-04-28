@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="container">
+      <div class="title">Tic Tac Toe </div>
+      <Play />
+    </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
+import Play from './components/Play'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Play,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .container{
+     margin:20px auto;
+  }
+  .title{
+    height:auto;
+    font-size:64px;
+    text-align: center;
+    padding:20px;
+    font-weight:bold;
+    color:#003049;
+  }
 </style>
